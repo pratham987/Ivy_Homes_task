@@ -1,17 +1,11 @@
 import requests
 import time
 
-# Replace with your API's endpoint
 API_URL = "http://35.200.185.69:8000/v1/autocomplete?query=a"
 
-# # Replace with authentication details if needed
-# HEADERS = {
-#     "Authorization": "Bearer YOUR_ACCESS_TOKEN",  # Modify if API uses API key or Basic Auth
-#     "User-Agent": "RateLimitTester/1.0"
-# }
 
 REQUESTS_COUNT = 500
-DURATION = 300  # Time in seconds (1 minute)
+DURATION = 300  
 
 def send_requests():
     start_time = time.time()
